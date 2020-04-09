@@ -14,9 +14,6 @@ docker build . -t simple-http-server
 
 ## Usage:
 
-The container the following mounted folders
-
-* "/data" --> mount the folder to be served
 
 Run the container with:
 
@@ -24,7 +21,6 @@ Run the container with:
 docker run  \
     --rm \
     -it \
-    -v /PATH/TO/MOUNT:/data \
     -p 8080:8080 \
     simple-http-server
 ```
